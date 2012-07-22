@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/emergencyscreen"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select one to delete from your acquaintance list"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <ListView
+        android:id="@+id/acquaintances"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:dividerHeight="-1dp" >
+
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add More" />
+
+        <LinearLayout
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/errormessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/tryagain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Try Again"
+        android:visibility="gone" />
+
+</LinearLayout>

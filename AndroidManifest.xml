@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ers"
+    android:versionCode="4"
+    android:versionName="0.4\nAdded Support for Gingerbread (on Google APIs Level 10)" >
+
+    <uses-sdk android:minSdkVersion="10" />
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+        android:label="@string/app_name"
+        android:icon="@drawable/resem"
+        android:logo="@drawable/resem"
+        android:allowClearUserData="false">
+        
+        <activity
+            android:name=".EmergencyType"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PersonalDetailsRegistration"
+            android:label="@string/app_name"></activity>        
+        <activity 
+            android:name=".InsuranceDetailsRegistration" 
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".AcquaintanceDetailsRegistration"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".MemberSelect"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".Acknowledgement"
+            android:label="@string/app_name"></activity>
+        <activity 
+            android:name=".MyAccount"
+            android:label="@string/app_name"></activity>
+        <activity 
+            android:name=".ChangePassword"
+            android:label="@string/app_name"></activity>
+        <activity 
+            android:name=".EditAcquaintances"
+            android:label="@string/app_name"></activity>
+        
+    </application>
+
+</manifest>
